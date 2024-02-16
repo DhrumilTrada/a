@@ -1,0 +1,41 @@
+<!-- array.enteries()
+->return a pair of [index,element] in each iteration of for of loop.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let colors=['red','green','blue'];
+        for (const [index,color] of colors.entries()) {
+            console.log(`${color} is at index ${index}`);
+        }
+    </script>
+</body>
+</html>
+
+<!-- Write es6 to find max number from array using for of loop. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[5,10,11,6,22];
+        max=arr[0];
+        for (const i of arr) {
+            if (i>arr[0]) {
+                max=i;
+            }
+            }
+            console.log(max);
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!-- syntax:  var re=/abc/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h4>If all character between slace /abc/ present in text then print</h4>
+    <script>
+        function fun() {
+            var pat=/abc/i;
+            var u=document.getElementById("id").value;
+            if (pat.test(u)) {
+                alert("Pattern is matched");
+            }
+            else{
+                alert("Pattern is not matched");
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="id"/>
+    <button onclick="fun()">submit</button>
+</body>
+</html>
+<br>
+<!-- bracket:- 
+[abc] :-find any character between bracket in text then return true. 
+[^abc] :-find not any character between bracket in text then return true. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h4>If any character between bracket [abc] present in text then print</h4>
+    <script>
+        function fun() {
+            var pat=/[abc]/;
+            var u=document.getElementById("id").value;
+            if (pat.test(u)) {
+                alert("Pattern is matched");
+            }
+            else{
+                alert("Pattern is not matched");
+
+            }
+        }
+        function fun1() {
+            var pat=/[^abc]/;
+            var u=document.getElementById("id1").value;
+            if (pat.test(u)) {
+                alert("Pattern is matched");
+            }
+            else{
+                alert("Pattern is not matched");
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="id"/>
+    <button onclick="fun()">submit</button><br>
+    <h4>not any of character between bracket [^abc] present in text then print</h4>
+    <input type="text" id="id1"/>
+    <button onclick="fun1()">submit</button>
+</body>
+</html>
+<br>
+<!-- (x|y) ->x or y -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h4>any of one character between bracket [a|b] present in text then print</h4>
+    <script>
+        function fun() {
+            var pat=/[a|b]/;
+            var u=document.getElementById("id").value;
+            if (pat.test(u)) {
+                alert("Pattern is matched");
+            }
+            else{
+                alert("Pattern is not matched");
+
+            }
+        }
+        </script>
+</head>
+<body>
+    <input type="text" id="id"/>
+    <button onclick="fun()">submit</button>
+</body>
+</html>
+
+
+<!-- 
+    ^ -string must start with
+    * -zero or more accurance
+    + -one or more accurance
+    $ -matches with end of string
+    \d -find a digit  [0-9]
+    \D -find a non digit character [^0-9]
+    \w -find a word character [a-z,A-z,0-9,_]
+    \W -find a non-word character [all special character]
+ -->

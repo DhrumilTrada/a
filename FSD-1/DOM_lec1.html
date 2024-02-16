@@ -1,0 +1,41 @@
+<!-- 
+With html DOM,javascript can access and change all element of html document.
+   ->JS can change all html elements in page.
+   ->js can change all html attributes in page.
+   ->js can change all css style.
+   ->add & remove html elements and attributes.
+   ->create html events.
+
+   **dom is a started object model in the page and programming interface for HTML.
+-->
+<!-- 
+    1)getElementById("id");
+    2)getElementsByClassName("C1");    //Return array
+    2)getElementsByTagName("P");    //Return array
+    2)getElementsByName("text");    //Return array
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="Hello World";    //innerHtml-This for to get inner html.
+    </script>
+</body> -->
+<body>
+    <p style="color: red;">H</p>
+    <p style="color: green;"></p>
+    <p style="color: yellow;"></p>
+    <script>
+        c1=document.getElementsByTagName("p");
+        for (i =0;i < c1.length;i++) {
+           c1[i].innerHTML="Text Changed"
+        }
+    </script>
+</body>
+</html>

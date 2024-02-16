@@ -1,0 +1,67 @@
+<!-- How to change css property? -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b1">
+    <p id="p1"> This is p tag</p>
+    <h1 id="h1">This is h1 Tag</h1>
+    <script>
+        document.getElementById("p1").style.color="red";
+        document.getElementById("h1").setAttribute("align","right");
+        document.getElementById("b1").bgColor="yellow";
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello World</p>
+    <script>
+        function f1() {
+            document.getElementById("p1").innerHTML="This is P tag";
+            
+        }
+    </script>
+    <button onclick="f1()">ok</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="White rose.jpg" alt="white rose" id="i1" width="225px" height="225px">
+    <script>
+        function f1() {
+            document.getElementById("i1").src="Yellow flower.jpg";
+        }
+        function f2() {
+            document.getElementById("i1").src="White rose.jpg";
+        }
+        function f3() {
+            document.getElementById("i1").src="Red_Rose.jfif";
+        }
+        function f4() {
+            document.getElementById("i1").src="blue rose.jpg";
+        }
+    </script>
+    <button onclick="f1()">Yellow Rose</button>
+    <button onclick="f2()">White rose</button>
+    <button onclick="f3()">Red Rose</button>
+    <button onclick="f4()">Blue Rose</button>
+</body>
+</html>

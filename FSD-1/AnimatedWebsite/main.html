@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="animation.js"></script>
+    <title>Document</title>
+    <style>
+        .form {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust as needed */
+            background: url('D:\FSD-1\AnimatedWebsite\v2.mp4') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .form-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Overlay color */
+        }
+        .form-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="form">
+        <div class="form-overlay"></div>
+        <div class="form-content">
+            <form action="google.com" method="post" onsubmit="changeBack(event)">
+                <label for="username">UserName</label><br>
+                <input type="text" maxlength="10" placeholder="Enter UserName"><br>
+                <label for="password">Password</label><br>
+                <input type="password" maxlength="10" placeholder="Enter Password"><br>
+                <input type="submit"><br>
+                <input type="reset">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

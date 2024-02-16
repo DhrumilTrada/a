@@ -1,0 +1,55 @@
+<!-- 
+    ->EcmaScript is a scripting language.
+    ->used to apply client-side scripting.
+    ->ES 2015 was second major revision of javascript.
+    ->Also known as ES6.
+    ->Latest edition 13June 2022.
+ -->
+
+ <!-- Template Literal
+     (`)back tick 
+    syntax:-  ${variable name}-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        a=10;
+        b=10;
+        c=a+b;
+        console.log("sum="+c);
+        // or
+        console.log(`sum=${c}`)
+    </script>
+</head>
+</html>
+
+
+<!-- 
+Fat Arrow Function(=>):
+    syntax:-
+        const functionname=(parameter received)=>
+        {
+            function body
+        }
+-->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        const newfun=p=>`val=${p}`;
+        console.log(newfun(30));
+
+        const newfun1=(i,j)=>`${i+j}`;
+        console.log(`addition=${newfun1(5,7)}`)
+
+        const newfun2=(i,j)=>
+        {
+            let sum;
+            sum=i+j;
+            return sum;
+        }
+        console.log(`addition=${newfun2(5,7)}`)
+    </script>
+</body>
+</html>

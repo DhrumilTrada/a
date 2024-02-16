@@ -1,0 +1,23 @@
+<!-- write a js that use a function to calculate how many days are left in your birthday-->
+<html>
+    <head>
+        <script>
+            function DaysDifference(date1,date2) { 
+                one_day=24*60*60*1000;
+                birth_time=date1.getTime();
+                current_date=date2.getTime();
+                days_left=Math.abs(birth_time-current_date);
+                return Math.round(days_left/one_day);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            d1=new Date("2024-08-04");
+            // d1.setMonth(7);
+            // d1.setDate(4);
+            d2=new Date();
+            document.write("remaining days: "+DaysDifference(d1,d2))
+        </script>
+    </body>
+</html>

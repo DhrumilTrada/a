@@ -1,0 +1,32 @@
+<!-- write a function using ES6 to calclate and print all prime numbers between given two numbers pass as an argument asumme that first number is smaller than 2nd number-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const prime=(a,b)=>
+        {
+            for (i = a; i < b; i++) {
+                count=0;
+               for (j = 2;j<i;j++) {
+                if (parseInt(i%j)==0) {
+                    {
+                    count=1;
+                    break;
+                    }
+                }
+               }
+            if (count!=1) {
+                console.log(`prime number=${i}`)
+            } 
+            }
+        }
+        `${prime(1,10)}`
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

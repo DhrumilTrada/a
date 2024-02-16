@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validateForm(event,obj){
+            var re = /abc/;
+            var passwordInput = obj.querySelector('input[type="password"]');
+            if(!re.test(passwordInput.value)){
+                event.preventDefault();
+                document.write('INVALID INPUT!');
+            }
+            else{
+                alert('FORM SUBMITTED SUCCESSFULLY!');
+            }
+        }
+    </script>
+    <title>Regular Expression Demo</title>
+</head>
+<body>
+    <section>
+        <form action="https://www.google.com/" id="form1" method="GET" onsubmit="return validateForm(event,this)">
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">Username</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit-btn" id="sub-btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+</html>

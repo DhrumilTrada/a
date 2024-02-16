@@ -1,0 +1,49 @@
+<!-- 
+1)To get current date and time
+    date=new Date();
+->date objects are created with new data()
+----**Methods**----
+1)getFullYear()
+2)getMonth()     0-11
+3)getDate()      1-31
+4)getHours()     0-23
+5)getMinutes()   0-59
+6)getDay()       0-6
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        d1=new Date();
+        d2=new Date("2000-3-15");
+        d3=new Date(2020,2,15,20,50,50,0);
+        //          year month date hour minute second milisecond   -->this is the format in sequence
+        document.write("full year:"+d1.getFullYear()+"<br>")
+        document.write("Month:"+d1.getMonth()+"<br>")
+        document.write("date:"+d1.getDate()+"<br>")
+        document.write("Hour:"+d1.getHours()+"<br>")
+        document.write("Minutes:"+d1.getMinutes()+"<br>")
+        document.write("day"+d1.getDay()+"<br>")
+
+        document.write(d2.getFullYear()+"<br>")
+        document.write(d2.getMonth()+"<br>")
+        document.write(d2.getDate()+"<br>")
+        document.write(d2.getHours()+"<br>")
+        document.write(d2.getMinutes()+"<br>")
+        document.write(d2.getDay()+"<br>")
+
+        document.write(d3.getFullYear()+"<br>")
+        document.write(d3.getMonth()+"<br>")
+        document.write(d3.getDate()+"<br>")
+        document.write(d3.getHours()+"<br>")
+        document.write(d3.getMinutes()+"<br>")
+        document.write(d3.getDay()+"<br>")
+        
+    </script>
+</body>
+</html>

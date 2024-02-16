@@ -1,0 +1,31 @@
+<!-- write a form code that accepting a integer hsivng four digit ip should not accept char and letters and special symbol. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+             pat=/^\d+$/;
+            r=document.getElementById("t1").value;
+            if (r.length!=4) {
+               alert("username must be 4 digit");
+            }
+            if(!pat.test(r)){
+               alert("username must not contains chars");
+            }
+            else{
+               alert("valid");
+            }
+        
+        }
+    </script>
+</head>
+<body>
+        <input type="text" id="t1"/>
+    <button onclick="fun()">submit</button>
+</body>
+</html>
+
+<!-- if want give fixed digit then is should be written in {} bracket-->

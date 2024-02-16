@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    </script>
+</body>
+</html>
+<!-- Write ES6 function to be call on button click event.Take 1 division with some text and no decoration initially.
+Take font-size and style as default argument and pass bg color and text color while passing the argument to the function
+style should change on button click.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const fun=(bgcolor,ftc,fontsize=20,fontfamily="arial")=>{
+            i=document.getElementById("id");
+            i.style.backgroundColor=bgcolor;
+            i.style.color=ftc;
+            i.style.fontsize=fontsize;
+            i.style.fontFamily=fontfamily;
+        }
+    </script>
+</head>
+<body>
+    <div id="id">
+        Lorem ipsum dolor sit amet conse    ctetur adipisicing elit. Eaque enim nemo quos reprehenderit deleniti obcaecati quidem impedit facere vitae molestiae illo, magni ex autem? Corporis iste sunt doloremque soluta quam?
+    </div>
+    <br>
+    <button onclick="fun('purple','white')">submit</button>
+</body>
+</html>

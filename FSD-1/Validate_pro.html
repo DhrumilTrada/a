@@ -1,0 +1,46 @@
+<!-- wrtie a js to validate username and password length must be of 6 to 12 characters username should not start with _ @ or any number. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            user_pat=/^[^\_|^\@|^[0-9]]/;
+            u=document.getElementById("id1").value;
+            if(user_pat.test(u)){
+                alert("username is correct")
+            }
+            else{
+            alert("username should not start _ or @ or digits")
+            
+        }
+            pass_pat=/\d{6,12}/;
+            u1=document.getElementById("id2").value;
+            if(pass_pat.test(u1)){
+                alert("password is correct")
+            }
+            else{
+            alert("password should be of length 6 to 12")
+             }
+
+             email_pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+             u2=document.getElementById("id3").value;
+            if(email_pat.test(u2)){
+                alert("email is correct")
+            }
+            else{
+            alert("email is not correct")
+             }
+    }
+    </script>
+</head>
+<body>
+    Username<input type="text" id="id1">
+    password<input type="password" id="id2">
+    Email: <input type="email" id="id3">
+    <button onclick="fun()">submit</button>
+
+</body>
+</html>

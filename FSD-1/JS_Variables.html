@@ -1,0 +1,53 @@
+<!-- 
+automatically
+var  ->block and function
+let  ->not valid for in same scope.
+const -->
+
+<!-- 
+<html>
+<head>
+     <script>
+        var x=10;
+        var x=20;
+        function print() {
+            var x=25;
+            document.write(x +"<br>")
+        }
+        print()
+        document.write(x)
+    </script>
+</head>
+</html>
+ -->
+
+<!-- 
+<html>
+<head>
+      <script>
+        let x=10;
+        // let x=20; gives error
+        function print() {
+            var x=25;
+            document.write(x +"<br>")
+        }
+        print()
+        document.write(x)
+    </script>
+</head>
+</html>
+ -->
+
+<html>
+    <head>
+   <script>
+    const x=10;
+    function print() {
+          x=25;
+        document.write(x +"<br>")
+    }
+    print()
+    document.write(x)
+</script>
+</head>
+</html>

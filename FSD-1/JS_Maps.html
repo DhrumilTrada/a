@@ -1,0 +1,50 @@
+<!-- 
+    Map:-
+    use to store all element in key and value pair.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let map=new Map();
+        map.set("ABC","Faculty");
+        map.set("XYZ","DEAN");
+        map.set("PQR","PEON");
+        map.set("JKL","ADMIN");
+        console.log(map);
+        map.delete("PQR");
+        console.log(map);
+        map
+    </script>;
+ </body>
+ </html>
+
+ <!-- String Method
+       1)startsWith();
+       2)endsWith();
+       3)includes();
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        s="This is demo";
+        s1="AAA";
+        s2="ABC";
+        console.log(s.startsWith("This"));
+        console.log(s.startsWith("this",8));
+        console.log(s.includes("is"));
+        console.log(s.endsWith("is",6));
+    </script>
+</body>
+</html>

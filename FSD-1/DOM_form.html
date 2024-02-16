@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1"></form>
+    username: <input type="text" value="uname" id="i2">
+    Password: <input type="password" value="1234" id="i3">
+    Gender: <input type="radio" value="male" name="r1" id="i1">Male
+            <input type="radio" value="female" name="r1" id="i1">female
+            <input type="radio" value="other" name="r1" id="i1">other
+</form>
+<script>
+    function f1() {
+        obj=document.f1.uname.value;
+        document.write(obj);
+    }
+</script>
+<button onclick="f1()">submit</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let username="Hiral";
+        let age=31;
+        let user={uname:username,a:age};
+        console.log(`Name=${user.username}`);
+        console.log(`age=${user.a}`);
+
+
+        let user1={uname:'hiral',a:31};
+        let {uname:firstname,a:Age}=user1;
+        console.log(`username is ${firstname}`);
+        </script>
+</body>
+</html>
+
+<!-- class and constructor 
+class classname{
+    constructor(arguments)
+    {
+
+    }
+    methods
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(n,a){
+                this.name=n;
+                this.age=a;
+            }
+            getName=()=>{
+                return this.name;
+            }
+        }
+        let obj=new Person("ABC",23);
+        console.log(obj.getName());
+    </script>
+</body>
+</html>
